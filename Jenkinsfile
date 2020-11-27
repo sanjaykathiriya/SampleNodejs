@@ -1,8 +1,8 @@
 pipeline {
     agent  {
-             {
-               customWorkspace 'C:\test'
-             }   
+             ws("C:\jenkins") {
+  echo "awesome commands here instead of echo"
+}
         docker {
             image 'node'
             args '-p 3000:3000'
