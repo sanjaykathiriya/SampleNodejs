@@ -1,12 +1,16 @@
 pipeline {
-    agent  {
-        label "test"
+  agent {
+    label "test"
+  }
+  options {
+    skipDefaultCheckout()
+  }
              
         docker {
             image 'node'
             args '-p 3000:3000'
         }
-    }
+    
      environment {
             CI = 'true'
         }
