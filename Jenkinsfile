@@ -1,4 +1,10 @@
 pipeline {
+	pipeline {
+  agent {
+    label "C:\test"
+  }
+  options {
+    skipDefaultCheckout()
     agent {
 	
         docker {
