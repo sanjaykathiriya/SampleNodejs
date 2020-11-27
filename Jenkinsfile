@@ -1,6 +1,8 @@
 pipeline {
     agent  {
-        customWorkspace 'C:\test'
+             {
+               customWorkspace 'C:\test'
+             }   
         docker {
             image 'node'
             args '-p 3000:3000'
