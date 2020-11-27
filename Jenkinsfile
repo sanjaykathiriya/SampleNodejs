@@ -1,12 +1,12 @@
 pipeline {
-  agent {
-    label "test"
-  }
-  options {
-    skipDefaultCheckout()
-  }
+    agent {
+        label {
+            label ""
+            customWorkspace "C:/work/${BRANCH_NAME}"
+        }
+    }
              
-  docker {
+    docker {
             image 'node'
             args '-p 3000:3000'
         }
