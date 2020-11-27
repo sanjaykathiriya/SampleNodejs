@@ -1,4 +1,7 @@
 pipeline {
+    node('test') {
+    // some block
+}
     agent {
         docker {
             image 'node:6-alpine'
