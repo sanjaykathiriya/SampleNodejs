@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+    label "test"
+  }
+  options {
+    skipDefaultCheckout()
     stages {
         stage('Build') {
             steps {
