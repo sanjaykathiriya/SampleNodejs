@@ -1,5 +1,8 @@
 pipeline {
     agent {
+        dir('C:\\test') {
+    // some block
+}
              
     docker {
             image 'node'
