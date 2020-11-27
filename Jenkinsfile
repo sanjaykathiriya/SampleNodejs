@@ -1,10 +1,5 @@
 pipeline {
     agent {
-        label {
-            label ""
-            customWorkspace "C:/work/${BRANCH_NAME}"
-        }
-    }
              
     docker {
             image 'node'
