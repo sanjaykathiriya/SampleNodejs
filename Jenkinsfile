@@ -18,7 +18,7 @@ pipeline {
                     steps {
                         sh '''npm install pm2@latest -g'''
                         sh '''pm2 start app.js '''
-                        sh '''pm2 log '''
+                        
                     }
                 }
         
