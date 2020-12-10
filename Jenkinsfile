@@ -16,8 +16,8 @@ pipeline {
         }
         stage('deploy') {
                     steps {
-                        sh '''npm install pm2@latest -g'''
-                        sh '''pm2 start app.js '''
+                        sh '''npm install -g serve'''
+                        sh ''''serve -s build '''
                         
                     }
                 }
