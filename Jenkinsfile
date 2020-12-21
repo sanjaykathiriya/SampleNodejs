@@ -16,9 +16,9 @@ pipeline {
         }
         stage('deploy') {
                     steps {
-                        sh '''npm install -g serve'''
-                        sh '''serve -s build '''
-                        sh '''./jenkins/scripts/kill.sh'''
+                     
+                        sh '''pm2 start app.js '''
+                        
                         
                     }
                 }
