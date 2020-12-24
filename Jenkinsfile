@@ -5,18 +5,18 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                 '''npm install'''
+                 - npm install
             }
         }
         stage('Test') {
             steps {
-                '''npm run build'''
+                - npm run build
             }
         }
         stage('deploy') {
                     steps {
-                         '''npm install -g serve'''
-                           '''serve -s build '''
+                         - npm install -g serve
+                           - serve -s build
                      
                        
                         
