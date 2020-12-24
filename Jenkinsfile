@@ -1,5 +1,8 @@
 pipeline {
    agent any
+   ws("D:\cicdaws") {
+  echo "awesome commands here instead of echo"
+}
     
     stages {
         stage('Build') {
